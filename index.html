@@ -1,18 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lettres de recommandation</title>
+    <meta charset="UTF-8">
+    <title>Lettres de recommandation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .pdf-card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .pdf-card h2 {
+            margin-top: 0;
+            font-size: 1.4em;
+            color: #007acc;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        p.note {
+            text-align: center;
+            color: #555;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #007acc;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            font-size: 1em;
+        }
+
+        a.button:hover {
+            background-color: #005f99;
+        }
+    </style>
 </head>
 <body>
-  <h1>Lettres de recommandation</h1>
+    <header>
+        <h1>Lettres de recommandation</h1>
+    </header>
 
-  <h2>Lettre de recommandation UGA</h2>
-  <iframe src="Lettre_de_recommandation_UGA.pdf" width="100%" height="600px"></iframe>
+    <main>
+        <div class="pdf-card">
+            <h2>Lettre de recommandation UGA</h2>
+            <iframe src="Lettre_de_recommandation_UGA.pdf"></iframe>
+            <a class="button" href="Lettre_de_recommandation_UGA.pdf" target="_blank" download>Télécharger / Ouvrir</a>
+        </div>
 
-  <h2>Lettre de recommandation IECD</h2>
-  <iframe src="Lettre_de_recommandation_IECD.pdf" width="100%" height="600px"></iframe>
+        <div class="pdf-card">
+            <h2>Lettre de recommandation IECD</h2>
+            <iframe src="Lettre_de_recommandation_IECD.pdf"></iframe>
+            <a class="button" href="Lettre_de_recommandation_IECD.pdf" target="_blank" download>Télécharger / Ouvrir</a>
+        </div>
 
+        <p class="note">Si les PDFs ne s'affichent pas dans l'iframe (GitHub bloque parfois l'embed), utilisez les boutons ci-dessus pour ouvrir ou télécharger le fichier.</p>
+    </main>
 </body>
 </html>
